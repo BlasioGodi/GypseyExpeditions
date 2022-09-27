@@ -1,2 +1,2 @@
 # GypseyExpeditions
-Travels
+GypseyExpedition Travel Website
