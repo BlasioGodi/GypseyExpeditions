@@ -1,0 +1,7 @@
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\GypseyExpeditions.exe
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\GypseyExpeditions.dll
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\GypseyExpeditions.deps.json
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\GypseyExpeditions.runtimeconfig.json
+D:\Git\Websites\GypseyExpeditions\GypseyExpeditions\GypseyExpeditions\obj\Release\net6.0\PubTmp\Out\GypseyExpeditions.pdb

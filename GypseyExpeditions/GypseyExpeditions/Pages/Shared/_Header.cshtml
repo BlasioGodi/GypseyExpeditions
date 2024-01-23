@@ -1,0 +1,242 @@
+﻿@model Controllers._HeaderModel
+@{
+    ViewData["Email"] = "info@gypseyexpeditions.com";
+    Model.Destinations = new List<string> { "Maasai Mara", "Diani Beach", "Ol Pejeta", "Tsavo Park", "Amboseli Park" };
+    Model.Packages = new List<string> { "Valentines", "Christmas", "Couples", "All Inclusive", "Game Safari" };
+    Model.SocialIcons = new List<string> { "fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-instagram", "fa-brands fa-telegram" };
+    Model.SocialList = new List<string> { "social-list-facebook", "social-list-twitter", "social-list-instagram", "social-list-telegram" };  
+}
+
+<header class="main-header">
+    <div class="main-header_top text-white">
+        <div class="container d-none d-lg-block">
+            <div class="inner clearfix">
+                <div class="main-header_left">
+                    <ul class="list-unstyled address">
+                        <li>
+                            <div class="icon">
+                                <span><i class="fa fa-phone fa-1x"></i></span>
+                            </div>
+                            <div class="text">
+                                <a href="tel:+ 254 724 822582"> +254 724 822582</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span><i class="fa fa-envelope fa-1x"></i></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">@ViewData["Email"]</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header_right">
+                    <div class="inner">
+                        <div class="main-header_socials">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <div class="main-header_btn-box">
+                            <a href="#" class="btn btn-primary">Become a local guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sticky-index">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky my-0 py-0">
+            <div class="container-lg container-fluid">
+                <a class="navbar-brand text-end" asp-area="" asp-page="/Index">
+                    <!--Smaller Screens-->
+                    <img src="~/lib/src/logos/Gypsey-76.png" class="d-inline-block align-text-center mx-2 d-sm-none" alt="Gypsey Logo" />
+                    <!--Larger Screens-->
+                    <img src="~/lib/src/logos/Gypsey-100-1.png" class="d-inline-block align-text-center mx-2 d-none d-sm-block" alt="Gypsey Logo" />
+                </a>
+                <button class="navbar-toggler button-menu-wrap" id="offcanvasButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasGypsey"
+                        aria-controls="offcanvasGypsey" aria-label="Toggle navigation">
+                    <div class="button-menu" id="menu">
+                        <div>
+                            <span class="line-top"></span>
+                            <span class="line-middle"></span>
+                            <span class="line-bottom"></span>
+                        </div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Our Services</a>
+                        </li>
+                        <li class="nav-item navbar-destinations-menu">
+                            <a class="nav-link nav-link-active">Destinations <span><i class="fa fa-angle-down"></i></span></a>
+                            <ul>
+                                @if (Model.Destinations != null)
+                                {
+                                    @foreach (var destinationName in Model.Destinations)
+                                    {
+                                        <li><a aria-current="page" asp-area="" asp-page="/Destinations" asp-route-title="@destinationName">@destinationName</a></li>
+                                    }
+                                }
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Bookings</a>
+                        </li>
+                        <li class="nav-item navbar-packages-menu">
+                            <a class="nav-link nav-link-active">Packages <span><i class="fa fa-angle-down"></i></span></a>
+                            <ul>
+                                @if (Model.Packages != null)
+                                {
+                                    @foreach (var packageName in Model.Packages)
+                                    {
+                                        <li><a aria-current="page" asp-area="" asp-page="/Destinations" asp-route-title="@packageName">@packageName</a></li>
+                                    }
+                                }
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Adventures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="offcanvas offcanvas-start text-light bg-offcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasGypsey"
+         aria-labelledby="offcanvasGypseyLabel">
+        <div class="border-bottom border-custom-black">
+        </div>
+        <div class="offcanvas-body container d-flex flex-column h-100">
+            <div class="justify-content-between align-items-baseline h-100">
+                <nav class="sideMenu-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/About">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile">
+                                Destinations <span class="nav-link-mob-button" id="nav-link-btn-1" data-corresponding-angle="navlinkAngle1" data-bs-toggle="collapse"
+                                                   data-bs-target="#collapseDestinations" aria-expanded="false" aria-controls="collapseDestinations"><i class="fa fa-angle-down" id="nav-link-mob-angle-1"></i></span>
+                            </a>
+                            <div class="collapse" id="collapseDestinations">
+                                <ul class="text-center text-light bg-offcanvas-collapse">
+                                    @if (Model.Destinations != null)
+                                    {
+                                        @for (var i = 0; i < Model.Destinations.Count; i++)
+                                        {
+                                            var destinationNameCanvas = Model.Destinations[i];
+
+                                            <li class="@(i == Model.Destinations.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
+                                                <a target="_blank" rel="noopener noreferrer" class="nav-link"
+                                                   aria-current="page" asp-area="" asp-page="/Destinations" asp-route-title="@destinationNameCanvas">@destinationNameCanvas</a>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile" aria-current="page">Bookings<span class="nav-link-mob-button" id="nav-link-btn-2" data-corresponding-angle="navlinkAngle2"><i class="fa fa-angle-down" id="nav-link-mob-angle-2"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile">
+                                Packages <span class="nav-link-mob-button" id="nav-link-btn-3" data-corresponding-angle="navlinkAngle3" data-bs-toggle="collapse"
+                                               data-bs-target="#collapsePackages" aria-expanded="false" aria-controls="collapsePackages"><i class="fa fa-angle-down" id="nav-link-mob-angle-3"></i></span>
+                            </a>
+                            <div class="collapse" id="collapsePackages">
+                                <ul class="text-center text-light bg-offcanvas-collapse">
+                                    @if (Model.Packages != null)
+                                    {
+                                        @for (var i = 0; i < Model.Packages.Count; i++)
+                                        {
+                                            var packageCanvas = Model.Packages[i];
+
+                                            <li class="@(i == Model.Packages.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
+                                                <a target="_blank" rel="noopener noreferrer" class="nav-link"
+                                                   aria-current="page" asp-area="" asp-page="/Projects/Projects" asp-route-title="@packageCanvas">@packageCanvas</a>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile">Adventures <span class="nav-link-mob-button" id="nav-link-btn-4" data-corresponding-angle="navlinkAngle4"><i class="fa fa-angle-down" id="nav-link-mob-angle-4"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile">Blog <span class="nav-link-mob-button" id="nav-link-btn-5" data-corresponding-angle="navlinkAngle5"><i class="fa fa-angle-down" id="nav-link-mob-angle-5"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row h-100">
+                <div class="col-contact pt-md-3 pt-xs-5">
+                    <p class="text">Make life-long memories with us!</p>
+                    <p class="text"><span><i class="fa fa-phone contact-icons phone"></i> +254 724 822582</span></p>
+                    <p class="text"><span><i class="fa fa-whatsapp contact-icons whatsapp"></i> +254 724 822582</span></p>
+                    <p class="text"><span><i class="fa fa-envelope contact-icons email"></i> info@gypseyexpeditions.com</span></p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div id="Follow" class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-lg-start text-center mb-2">
+                    <p class="mb-0 social-title text-s-center text-sm-start">
+                        Follow us on social media:
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 text-lg-end text-sm-end text-center mb-2">
+                    <ul class="social-list">
+                        @if (Model.SocialIcons != null)
+                        {
+                            @for (var i = 0; i < Model.SocialIcons.Count; i++)
+                            {
+                                var socialIconsCanvas = Model.SocialIcons[i];
+                                var socialListCanvas = Model.SocialList[i];
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" class="@socialListCanvas"
+                                       href="#" aria-label="follow button">
+                                        <i class="@socialIconsCanvas"></i>
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex align-items-end">
+                <div class="col-md-6 mb-2 col-lg-6 col-sm-12 text-center">
+                    &copy
+                    <span><strong>GypseyExpeditions</strong></span>
+                    2024 - All Rights Reserved.
+                </div>
+                <div class="col-md-6 mb-2 col-lg-6 col-sm-12 text-center text-light">
+                    Designed by
+                    <strong>WebMania</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Header Icon Style-->
+    <style>
+        @Html.Raw(ViewData["Social-List-Light"])
+    </style>
+</header>
+

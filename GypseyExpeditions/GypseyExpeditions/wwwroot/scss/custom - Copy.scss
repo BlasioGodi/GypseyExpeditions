@@ -1,0 +1,657 @@
+// custom.scss
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: ( "100": $gray-100, "200": $gray-200, "300": $gray-300, "400": $gray-400, "500": $gray-500, "600": $gray-600, "700": $gray-700, "800": $gray-800, "900": $gray-900, ) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+$redorange: #f89a4b !default;
+
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: ( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "redorange": $redorange,"green": $green, "teal": $teal, "cyan": $cyan, "black": $black, "white": $white, "gray": $gray-600, "gray-dark": $gray-800, ) !default;
+// scss-docs-end colors-map
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio: 4.5 !default;
+
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark: $black !default;
+$color-contrast-light: $white !default;
+
+// fusv-disable
+$blue-100: tint-color($blue, 80%) !default;
+$blue-200: tint-color($blue, 60%) !default;
+$blue-300: tint-color($blue, 40%) !default;
+$blue-400: tint-color($blue, 20%) !default;
+$blue-500: $blue !default;
+$blue-600: shade-color($blue, 20%) !default;
+$blue-700: shade-color($blue, 40%) !default;
+$blue-800: shade-color($blue, 60%) !default;
+$blue-900: shade-color($blue, 80%) !default;
+
+$indigo-100: tint-color($indigo, 80%) !default;
+$indigo-200: tint-color($indigo, 60%) !default;
+$indigo-300: tint-color($indigo, 40%) !default;
+$indigo-400: tint-color($indigo, 20%) !default;
+$indigo-500: $indigo !default;
+$indigo-600: shade-color($indigo, 20%) !default;
+$indigo-700: shade-color($indigo, 40%) !default;
+$indigo-800: shade-color($indigo, 60%) !default;
+$indigo-900: shade-color($indigo, 80%) !default;
+
+$purple-100: tint-color($purple, 80%) !default;
+$purple-200: tint-color($purple, 60%) !default;
+$purple-300: tint-color($purple, 40%) !default;
+$purple-400: tint-color($purple, 20%) !default;
+$purple-500: $purple !default;
+$purple-600: shade-color($purple, 20%) !default;
+$purple-700: shade-color($purple, 40%) !default;
+$purple-800: shade-color($purple, 60%) !default;
+$purple-900: shade-color($purple, 80%) !default;
+
+$pink-100: tint-color($pink, 80%) !default;
+$pink-200: tint-color($pink, 60%) !default;
+$pink-300: tint-color($pink, 40%) !default;
+$pink-400: tint-color($pink, 20%) !default;
+$pink-500: $pink !default;
+$pink-600: shade-color($pink, 20%) !default;
+$pink-700: shade-color($pink, 40%) !default;
+$pink-800: shade-color($pink, 60%) !default;
+$pink-900: shade-color($pink, 80%) !default;
+
+$red-100: tint-color($red, 80%) !default;
+$red-200: tint-color($red, 60%) !default;
+$red-300: tint-color($red, 40%) !default;
+$red-400: tint-color($red, 20%) !default;
+$red-500: $red !default;
+$red-600: shade-color($red, 20%) !default;
+$red-700: shade-color($red, 40%) !default;
+$red-800: shade-color($red, 60%) !default;
+$red-900: shade-color($red, 80%) !default;
+
+$redorange-100: tint-color($redorange, 80%) !default;
+$redorange-200: tint-color($redorange, 60%) !default;
+$redorange-300: tint-color($redorange, 40%) !default;
+$redorange-400: tint-color($redorange, 20%) !default;
+$redorange-500: $redorange !default;
+$redorange-600: shade-color($redorange, 20%) !default;
+$redorange-700: shade-color($redorange, 40%) !default;
+$redorange-800: shade-color($redorange, 60%) !default;
+$redorange-900: shade-color($redorange, 80%) !default;
+
+$orange-100: tint-color($orange, 80%) !default;
+$orange-200: tint-color($orange, 60%) !default;
+$orange-300: tint-color($orange, 40%) !default;
+$orange-400: tint-color($orange, 20%) !default;
+$orange-500: $orange !default;
+$orange-600: shade-color($orange, 20%) !default;
+$orange-700: shade-color($orange, 40%) !default;
+$orange-800: shade-color($orange, 60%) !default;
+$orange-900: shade-color($orange, 80%) !default;
+
+$yellow-100: tint-color($yellow, 80%) !default;
+$yellow-200: tint-color($yellow, 60%) !default;
+$yellow-300: tint-color($yellow, 40%) !default;
+$yellow-400: tint-color($yellow, 20%) !default;
+$yellow-500: $yellow !default;
+$yellow-600: shade-color($yellow, 20%) !default;
+$yellow-700: shade-color($yellow, 40%) !default;
+$yellow-800: shade-color($yellow, 60%) !default;
+$yellow-900: shade-color($yellow, 80%) !default;
+
+$green-100: tint-color($green, 80%) !default;
+$green-200: tint-color($green, 60%) !default;
+$green-300: tint-color($green, 40%) !default;
+$green-400: tint-color($green, 20%) !default;
+$green-500: $green !default;
+$green-600: shade-color($green, 20%) !default;
+$green-700: shade-color($green, 40%) !default;
+$green-800: shade-color($green, 60%) !default;
+$green-900: shade-color($green, 80%) !default;
+
+$teal-100: tint-color($teal, 80%) !default;
+$teal-200: tint-color($teal, 60%) !default;
+$teal-300: tint-color($teal, 40%) !default;
+$teal-400: tint-color($teal, 20%) !default;
+$teal-500: $teal !default;
+$teal-600: shade-color($teal, 20%) !default;
+$teal-700: shade-color($teal, 40%) !default;
+$teal-800: shade-color($teal, 60%) !default;
+$teal-900: shade-color($teal, 80%) !default;
+
+$cyan-100: tint-color($cyan, 80%) !default;
+$cyan-200: tint-color($cyan, 60%) !default;
+$cyan-300: tint-color($cyan, 40%) !default;
+$cyan-400: tint-color($cyan, 20%) !default;
+$cyan-500: $cyan !default;
+$cyan-600: shade-color($cyan, 20%) !default;
+$cyan-700: shade-color($cyan, 40%) !default;
+$cyan-800: shade-color($cyan, 60%) !default;
+$cyan-900: shade-color($cyan, 80%) !default;
+
+$blues: ( "blue-100": $blue-100, "blue-200": $blue-200, "blue-300": $blue-300, "blue-400": $blue-400, "blue-500": $blue-500, "blue-600": $blue-600, "blue-700": $blue-700, "blue-800": $blue-800, "blue-900": $blue-900, ) !default;
+
+$indigos: ( "indigo-100": $indigo-100, "indigo-200": $indigo-200, "indigo-300": $indigo-300, "indigo-400": $indigo-400, "indigo-500": $indigo-500, "indigo-600": $indigo-600, "indigo-700": $indigo-700, "indigo-800": $indigo-800, "indigo-900": $indigo-900, ) !default;
+
+$purples: ( "purple-100": $purple-100, "purple-200": $purple-200, "purple-300": $purple-300, "purple-400": $purple-400, "purple-500": $purple-500, "purple-600": $purple-600, "purple-700": $purple-700, "purple-800": $purple-800, "purple-900": $purple-900, ) !default;
+
+$pinks: ( "pink-100": $pink-100, "pink-200": $pink-200, "pink-300": $pink-300, "pink-400": $pink-400, "pink-500": $pink-500, "pink-600": $pink-600, "pink-700": $pink-700, "pink-800": $pink-800, "pink-900": $pink-900, ) !default;
+
+$reds: ( "red-100": $red-100, "red-200": $red-200, "red-300": $red-300, "red-400": $red-400, "red-500": $red-500, "red-600": $red-600, "red-700": $red-700, "red-800": $red-800, "red-900": $red-900, ) !default;
+
+$redorange: ( "redorange-100": $redorange-100, "redorange-200": $redorange-200, "redorange-300": $redorange-300, "redorange-400": $redorange-400, "redorange-500": $redorange-500, "redorange-600": $redorange-600, "redorange-700": $redorange-700, "redorange-800": $redorange-800, "redorange-900": $redorange-900, ) !default;
+
+$oranges: ( "orange-100": $orange-100, "orange-200": $orange-200, "orange-300": $orange-300, "orange-400": $orange-400, "orange-500": $orange-500, "orange-600": $orange-600, "orange-700": $orange-700, "orange-800": $orange-800, "orange-900": $orange-900, ) !default;
+
+$yellows: ( "yellow-100": $yellow-100, "yellow-200": $yellow-200, "yellow-300": $yellow-300, "yellow-400": $yellow-400, "yellow-500": $yellow-500, "yellow-600": $yellow-600, "yellow-700": $yellow-700, "yellow-800": $yellow-800, "yellow-900": $yellow-900, ) !default;
+
+$greens: ( "green-100": $green-100, "green-200": $green-200, "green-300": $green-300, "green-400": $green-400, "green-500": $green-500, "green-600": $green-600, "green-700": $green-700, "green-800": $green-800, "green-900": $green-900, ) !default;
+
+$teals: ( "teal-100": $teal-100, "teal-200": $teal-200, "teal-300": $teal-300, "teal-400": $teal-400, "teal-500": $teal-500, "teal-600": $teal-600, "teal-700": $teal-700, "teal-800": $teal-800, "teal-900": $teal-900, ) !default;
+
+$cyans: ( "cyan-100": $cyan-100, "cyan-200": $cyan-200, "cyan-300": $cyan-300, "cyan-400": $cyan-400, "cyan-500": $cyan-500, "cyan-600": $cyan-600, "cyan-700": $cyan-700, "cyan-800": $cyan-800, "cyan-900": $cyan-900, ) !default;
+// fusv-enable
+
+// scss-docs-start theme-color-variables
+$primary: $redorange !default;
+$secondary: $gray-200 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, ) !default;
+
+// scss-docs-start position-map
+$position-values: ( 0: 0, 5:5%, 10: 10%, 20: 20%, 30: 30%, 40: 40%, 50: 50%, 60: 60%, 65: 65%, 70: 70%, 75: 75%, 80: 80%, 90: 90%, 100: 100%, ) !default;
+
+$utilities: () !default;
+$utilities: map-merge( ( "border-radius": ( property: border-radius, class: br, values: ( 0: 0, 10: 10px, 20: 20px, 30: 30px, 40: 40px, 50: 50px, 60: 60px, 70: 70px, 80: 80px, 90: 90px, 100: 100px, inherit: inherit, ), ), "opacity": ( property: opacity, values: ( 0: 0, 10: 0.1, 20: 0.2, 25: 0.25, 30: 0.3, 45: 0.45, 50: 0.5, 60: 0.6, 70: 0.7, 75: 0.75, 80: 0.8, 90: 0.9, 100: 1, ), ),
+// scss-docs-start utils-position
+"position": ( property: position, values: static relative absolute fixed sticky, ), "top": ( property: top, values: $position-values, ), "bottom": ( property: bottom, values: $position-values, ), "start": ( property: left, class: start, values: $position-values, ), "end": ( property: right, class: end, values: $position-values, ), "height": ( property: height, class: h, values: ( 10: 10%, 20: 20%, 30: 30%, 40: 40%, 50: 50%, 60: 60%, 70: 70%, 80: 80%, 90: 90%, 100: 100%, auto: auto, ), ), ), $utilities );
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (xss:0, xs:375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px ) !default;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (xs:375px,sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px ) !default;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$btn-primary-color: #ffffff;
+$btn-primary-bg: rgb(73, 132, 184);
+$btn-primary-border: rgb(73, 132, 184);
+
+$nav-primary-color: black;
+$nav-secondary-color: white;
+
+$nav-primary-bg: rgb(248, 154, 75);
+$nav-primary-bg-1: darken(rgb(0, 0, 128), 10%);
+$nav-primary-bg-2: rgb(216, 74, 35);
+
+$border-primary-rgb:216, 74, 35;
+
+$darken-primary: darken(crimson, 30%);
+
+$card-primary-color: white;
+
+:root {
+    --bs-title-font-family: 'Oswald', sans-serif;
+    --bs-header-font-family: 'Rethink Sans', sans-serif;
+    --bs-body-font-family: 'Rethink Sans', sans-serif;
+    --bs-border-primary: 248, 154, 75;
+    --bs-border-black: 0,0,0;
+    --bs-border-white: 248,249,250;
+}
+
+.navbar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    margin-top: 20px;
+}
+
+.navbar-custom {
+    @extend .navbar;
+    border-bottom-color: linear-gradient( to right, $nav-primary-bg, $nav-primary-bg-2, $nav-primary-bg-1 );
+    color: $nav-primary-color;
+    background: rgba(275, 275, 275, 0.5);
+    padding: 5px 20px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    /* Additional styling for the sticky navbar */
+}
+
+.nav-item {
+    @extend .nav-item;
+    font-family: var(--bs-title-font-family);
+}
+
+.nav-link-active {
+    @extend .nav-link;
+    border-radius: 10px;
+    color: $nav-primary-color;
+    font-family: var(--bs-title-font-family);
+    font-size: 1.2rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $dark;
+        border-color: $nav-primary-bg-1;
+        color: $nav-secondary-color;
+    }
+}
+.nav-link-mobile {
+    @extend .nav-link;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgb(33,37,41);
+        border-color: rgb(33,37,41);
+        color: $btn-primary-color;
+    }
+}
+
+.nav-link-brand {
+    @extend .nav-link;
+    font-size: 1.3rem;
+    font-family: var(--bs-title-font-family);
+    font-weight: 800;
+    color: white;
+}
+
+.card-width {
+    min-width: 18rem;
+}
+
+.card-height {
+    min-height: 38rem;
+}
+
+.card-bg {
+    @extend .card;
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url("/lib/src/project/Photo-13.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: fit-content;
+    min-height: 30rem;
+}
+
+.card-date {
+    background-color: $primary;
+    color: black;
+    font-family: var(--bs-title-font-family);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -5%;
+    right: 3%;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-date .day {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.card-date .month {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.card-date .year {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card-img-no-rad,
+.card-img-top-no-rad {
+    @extend .card-img-top, .card-img;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-shadow {
+    @extend.card;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.card-shadow:hover,
+.card-shadow:focus {
+    @extend .card;
+    background-color: $nav-primary-bg;
+    color: $card-primary-color;
+    box-shadow: 0 15px 34px $nav-primary-bg;
+    cursor: pointer;   
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/lib/src/project/LP-10.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.bg-image + * {
+    position: relative;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-greyed-out {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.bg-grey-pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-blue {
+    background: #141e30; /* fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #243b55, #141e30 ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to right, #243b55, #141e30 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.bg-red-custom {
+    background: $darken-primary;
+    color: #fff;
+}
+
+.slider {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    // background: #141e30; /* fallback for old browsers */
+    // background: -webkit-linear-gradient(
+    //   to right,
+    //   #243b55,
+    //   #141e30
+    // ); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(
+    //   to right,
+    //   #243b55,
+    //   #141e30
+    // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // color: #fff;
+}
+
+.slider-card {
+    background-color: #fff;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgba(206, 191, 191, 0.493);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.slider-card img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: -20px;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: -20px;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+
+.owl-dot {
+    padding: 100px;
+    font-size: 30px !important;
+}
+
+@media (max-width: 575px) {
+    .slider .owl-item.active.center .slider-card {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.text-cus-blue {
+    color: $nav-primary-bg;
+}
+
+.border-custom-primary {
+    --bs-border-opacity: 1;  
+    border-color: rgba(var(--bs-border-primary), var(--bs-border-opacity)) !important;
+}
+
+.border-custom-black {
+    --bs-border-opacity: 0.2;
+    border-color: rgba(var(--bs-border-black), var(--bs-border-opacity)) !important;
+}
+
+.border-custom-white {
+    --bs-border-opacity: 0.2;
+    border-color: rgba(var(---bs-border-white), var(--bs-border-opacity)) !important;
+}
+
+.btn-primary-nav {
+    @extend .btn-primary;
+    font-family: var(--bs-title-font-family) !important;
+    background-color: $nav-primary-bg;
+    border-color: $nav-primary-bg;
+    border-radius: 10px;
+    padding-top: 0.6rem;
+    padding-bottom:0.6rem;
+}
+
+.btn-primary-nav:hover,
+.btn-primary-nav:focus {
+    @extend .btn-primary;
+    background-color: $nav-primary-bg-2;
+    border-color: $nav-primary-bg-2;
+    cursor: pointer;
+}
+
+.btn-close {
+    @extend .btn-close;
+    --bs-btn-close-focus-shadow: none;
+}
+
+.card-text-title {
+    @extend .card-title;
+    font-family:var(--bs-title-font-family);
+    font-weight:400;
+}
+
+.et-icon-color {
+    color: $primary;
+}
+
+.navbar-toggler{
+    @extend .navbar-toggler;
+    padding: 0;
+    border:none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    @extend .navbar-toggler;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Media Queries */
+@media (min-width: 200px) and (max-width: 575px) {
+   .card-bg{
+       min-height: 25rem;
+   }
+}
+
+@media (max-width: 280px) {
+    .card-width {
+        min-width: 12rem;
+    }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (min-width: 385px) and (max-width: 414px) {
+}
+
+@media (min-width: 414px) and (max-width: 576px) {
+}
+
+@media(min-width:576px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) and (max-width: 680px) {
+}
+
+@media (min-width: 575px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 780px) {
+}
+
+@media (min-width: 768px) {
+    .card-bg {
+        min-height: 30rem;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 850px) and (max-width: 920px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1000px) and (max-width: 1180px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

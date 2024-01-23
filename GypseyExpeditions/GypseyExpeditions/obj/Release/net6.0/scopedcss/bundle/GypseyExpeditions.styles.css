@@ -1,0 +1,46 @@
+/* _content/GypseyExpeditions/Pages/Shared/_Layout.cshtml.rz.scp.css */
+a.navbar-brand[b-ueskz7hab4] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-ueskz7hab4] {
+  color: #0077cc;
+}
+
+.btn-primary[b-ueskz7hab4] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ueskz7hab4], .nav-pills .show > .nav-link[b-ueskz7hab4] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ueskz7hab4] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ueskz7hab4] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ueskz7hab4] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ueskz7hab4] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ueskz7hab4] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

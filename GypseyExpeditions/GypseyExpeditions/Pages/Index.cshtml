@@ -1,10 +1,121 @@
 ﻿@page
-@model IndexModel
+@model GypseyExpeditions.Controllers.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@section MetaTags{
+
+}
+
+<section id="section-1" class="position-relative main-slider">
+    <div class="swiper swiper-landing">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(/lib/src/swiper-landing/TR-01.jpg)">
+                </div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="slider-inner">
+                        <h1>Travel & Adventure</h1>
+                        <p>Experience of a life-time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(/lib/src/swiper-landing/TR-02.jpg)">
+                </div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="slider-inner">
+                        <h1>Travel & Adventure</h1>
+                        <p>A different experience everytime</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(/lib/src/swiper-landing/TR-03.jpg)">
+                </div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="slider-inner">
+                        <h1>Travel & Adventure</h1>
+                        <p>Always excited to see new places</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(/lib/src/swiper-landing/TR-04.jpg)">
+                </div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="slider-inner">
+                        <h1>Travel & Adventure</h1>
+                        <p>Adventures that satisfy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(/lib/src/swiper-landing/TR-05.jpg)">
+                </div>
+                <div class="image-layer-overlay"></div>
+                <div class="container">
+                    <div class="slider-inner">
+                        <h1>Travel & Adventure</h1>
+                        <p>Experiences that inspire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="slider-button-prev">
+                <span class="fa fa-arrow-right"></span>
+            </div>
+
+            <div class="slider-button-next">
+                <span class="fa fa-arrow-right"></span>
+            </div>
+        </div>
+
+        <div class="swiper-pagination-bullet-active-next"></div>
+    </div>  
+</section>
+<section id="section-2" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-3" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-4" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-5" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-6" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-7" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-8" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-9" class="position-relative" style="min-height:100vh;">
+</section>
+<section id="section-10" class="position-relative" style="min-height:100vh;">
+</section>
+
+
+@section Scripts{
+    <script src="~/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-landing", {
+            spaceBetween: 1200,
+            effect: "fade",
+            loop: true,
+            navigation: {
+                nextEl: ".slider-button-next",
+                prevEl: ".slider-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+}

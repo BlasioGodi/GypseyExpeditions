@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GypseyExpeditions.props" />
+</Project>
