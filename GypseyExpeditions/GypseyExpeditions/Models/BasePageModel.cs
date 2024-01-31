@@ -5,6 +5,7 @@ namespace GypseyExpeditions.Models
 {
     public class BasePageModel : PageModel
     {
+        public IEnumerable<PopularTours> PopularTours { get; set; }
         public List<string> Destinations { get; set; }
         public List<string> Packages { get; set; }
         public List<string> SocialIcons { get; set; }

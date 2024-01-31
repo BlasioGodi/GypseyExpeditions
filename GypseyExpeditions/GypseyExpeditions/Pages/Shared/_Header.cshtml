@@ -4,7 +4,7 @@
     Model.Destinations = new List<string> { "Maasai Mara", "Diani Beach", "Ol Pejeta", "Tsavo Park", "Amboseli Park" };
     Model.Packages = new List<string> { "Valentines", "Christmas", "Couples", "All Inclusive", "Game Safari" };
     Model.SocialIcons = new List<string> { "fa-brands fa-facebook", "fa-brands fa-x-twitter", "fa-brands fa-instagram", "fa-brands fa-telegram" };
-    Model.SocialList = new List<string> { "social-list-facebook", "social-list-twitter", "social-list-instagram", "social-list-telegram" };  
+    Model.SocialList = new List<string> { "social-list-facebook", "social-list-twitter", "social-list-instagram", "social-list-telegram" };
 }
 
 <header class="main-header">
@@ -49,7 +49,7 @@
     </div>
     <div class="sticky-index">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky my-0 py-0">
-            <div class="container-lg container-fluid">
+            <div class="container">
                 <a class="navbar-brand text-end" asp-area="" asp-page="/Index">
                     <!--Smaller Screens-->
                     <img src="~/lib/src/logos/Gypsey-76.png" class="d-inline-block align-text-center mx-2 d-sm-none" alt="Gypsey Logo" />
@@ -67,7 +67,7 @@
                     </div>
                 </button>
                 <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto justify-content-between">
                         <li class="nav-item">
                             <a class="nav-link nav-link-active" aria-current="page" href="#">Home</a>
                         </li>
@@ -119,76 +119,75 @@
          aria-labelledby="offcanvasGypseyLabel">
         <div class="border-bottom border-custom-black">
         </div>
-        <div class="offcanvas-body container d-flex flex-column h-100">
-            <div class="justify-content-between align-items-baseline h-100">
-                <nav class="sideMenu-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/About">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile">
-                                Destinations <span class="nav-link-mob-button" id="nav-link-btn-1" data-corresponding-angle="navlinkAngle1" data-bs-toggle="collapse"
-                                                   data-bs-target="#collapseDestinations" aria-expanded="false" aria-controls="collapseDestinations"><i class="fa fa-angle-down" id="nav-link-mob-angle-1"></i></span>
-                            </a>
-                            <div class="collapse" id="collapseDestinations">
-                                <ul class="text-center text-light bg-offcanvas-collapse">
-                                    @if (Model.Destinations != null)
+        <div class="offcanvas-body container d-flex flex-column justify-content-between">
+            <nav class="sideMenu-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/About">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile">
+                            Destinations <span class="nav-link-mob-button" id="nav-link-btn-1" data-corresponding-angle="navlinkAngle1" data-bs-toggle="collapse"
+                                               data-bs-target="#collapseDestinations" aria-expanded="false" aria-controls="collapseDestinations"><i class="fa fa-angle-down" id="nav-link-mob-angle-1"></i></span>
+                        </a>
+                        <div class="collapse" id="collapseDestinations">
+                            <ul class="text-center text-light bg-offcanvas-collapse">
+                                @if (Model.Destinations != null)
+                                {
+                                    @for (var i = 0; i < Model.Destinations.Count; i++)
                                     {
-                                        @for (var i = 0; i < Model.Destinations.Count; i++)
-                                        {
-                                            var destinationNameCanvas = Model.Destinations[i];
+                                        var destinationNameCanvas = Model.Destinations[i];
 
-                                            <li class="@(i == Model.Destinations.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
-                                                <a target="_blank" rel="noopener noreferrer" class="nav-link"
-                                                   aria-current="page" asp-area="" asp-page="/Destinations" asp-route-title="@destinationNameCanvas">@destinationNameCanvas</a>
-                                            </li>
-                                        }
+                                        <li class="@(i == Model.Destinations.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
+                                            <a target="_blank" rel="noopener noreferrer" class="nav-link"
+                                               aria-current="page" asp-area="" asp-page="/Destinations" asp-route-title="@destinationNameCanvas">@destinationNameCanvas</a>
+                                        </li>
                                     }
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile" aria-current="page">Bookings<span class="nav-link-mob-button" id="nav-link-btn-2" data-corresponding-angle="navlinkAngle2"><i class="fa fa-angle-down" id="nav-link-mob-angle-2"></i></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile">
-                                Packages <span class="nav-link-mob-button" id="nav-link-btn-3" data-corresponding-angle="navlinkAngle3" data-bs-toggle="collapse"
-                                               data-bs-target="#collapsePackages" aria-expanded="false" aria-controls="collapsePackages"><i class="fa fa-angle-down" id="nav-link-mob-angle-3"></i></span>
-                            </a>
-                            <div class="collapse" id="collapsePackages">
-                                <ul class="text-center text-light bg-offcanvas-collapse">
-                                    @if (Model.Packages != null)
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile" aria-current="page">Bookings<span class="nav-link-mob-button" id="nav-link-btn-2" data-corresponding-angle="navlinkAngle2"><i class="fa fa-angle-down" id="nav-link-mob-angle-2"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile">
+                            Packages <span class="nav-link-mob-button" id="nav-link-btn-3" data-corresponding-angle="navlinkAngle3" data-bs-toggle="collapse"
+                                           data-bs-target="#collapsePackages" aria-expanded="false" aria-controls="collapsePackages"><i class="fa fa-angle-down" id="nav-link-mob-angle-3"></i></span>
+                        </a>
+                        <div class="collapse" id="collapsePackages">
+                            <ul class="text-center text-light bg-offcanvas-collapse">
+                                @if (Model.Packages != null)
+                                {
+                                    @for (var i = 0; i < Model.Packages.Count; i++)
                                     {
-                                        @for (var i = 0; i < Model.Packages.Count; i++)
-                                        {
-                                            var packageCanvas = Model.Packages[i];
+                                        var packageCanvas = Model.Packages[i];
 
-                                            <li class="@(i == Model.Packages.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
-                                                <a target="_blank" rel="noopener noreferrer" class="nav-link"
-                                                   aria-current="page" asp-area="" asp-page="/Projects/Projects" asp-route-title="@packageCanvas">@packageCanvas</a>
-                                            </li>
-                                        }
+                                        <li class="@(i == Model.Packages.Count - 1 ? "" : "border-bottom-collapse") mx-3 my-2">
+                                            <a target="_blank" rel="noopener noreferrer" class="nav-link"
+                                               aria-current="page" asp-area="" asp-page="/Projects/Projects" asp-route-title="@packageCanvas">@packageCanvas</a>
+                                        </li>
                                     }
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile">Adventures <span class="nav-link-mob-button" id="nav-link-btn-4" data-corresponding-angle="navlinkAngle4"><i class="fa fa-angle-down" id="nav-link-mob-angle-4"></i></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile">Blog <span class="nav-link-mob-button" id="nav-link-btn-5" data-corresponding-angle="navlinkAngle5"><i class="fa fa-angle-down" id="nav-link-mob-angle-5"></i></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row h-100">
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile">Adventures <span class="nav-link-mob-button" id="nav-link-btn-4" data-corresponding-angle="navlinkAngle4"><i class="fa fa-angle-down" id="nav-link-mob-angle-4"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile">Blog <span class="nav-link-mob-button" id="nav-link-btn-5" data-corresponding-angle="navlinkAngle5"><i class="fa fa-angle-down" id="nav-link-mob-angle-5"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-mobile" aria-current="page" asp-area="" asp-page="/Contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
                 <div class="col-contact pt-md-3 pt-xs-5">
                     <p class="text">Make life-long memories with us!</p>
                     <p class="text"><span><i class="fa fa-phone contact-icons phone"></i> +254 724 822582</span></p>

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\.map",
+      "PackagePath": "staticwebassets\\.map"
+    },
+    {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\css\\animate.css",
       "PackagePath": "staticwebassets\\css\\animate.css"
     },
@@ -53,8 +57,24 @@
       "PackagePath": "staticwebassets\\css\\icon\\linea-weather-10.css"
     },
     {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\css\\image-carousel.css",
+      "PackagePath": "staticwebassets\\css\\image-carousel.css"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\css\\owl.transitions.css",
+      "PackagePath": "staticwebassets\\css\\owl.transitions.css"
+    },
+    {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\data\\ToursList.json",
+      "PackagePath": "staticwebassets\\data\\ToursList.json"
     },
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\favicon.ico",
@@ -105,6 +125,146 @@
       "PackagePath": "staticwebassets\\lib\\fonts\\et-line\\et-line.woff"
     },
     {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\AroundTheWorld.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\AroundTheWorld.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\BeachOverview-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\BeachOverview-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\BeachOverview.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\BeachOverview.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\BeautifulZebras.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\BeautifulZebras.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\CanyonGym-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\CanyonGym-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\CanyonGym.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\CanyonGym.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\ChinaEruption-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\ChinaEruption-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\ChinaEruption.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\ChinaEruption.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\ElephantsHearding.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\ElephantsHearding.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\ElephantsWater.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\ElephantsWater.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\GiraffeFeed-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\GiraffeFeed-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\GiraffeFeed-2.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\GiraffeFeed-2.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\GiraffeFeed.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\GiraffeFeed.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Japan-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Japan-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Japan.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Japan.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Lakeside-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Lakeside-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Lakeside.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Lakeside.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\LargeElephants.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\LargeElephants.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\LionChill.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\LionChill.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Lions.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Lions.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MajesticLions-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MajesticLions-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MajesticLions-2.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MajesticLions-2.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MajesticLions.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MajesticLions.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MajesticRhinos.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MajesticRhinos.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MapTravels.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MapTravels.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MountainClimb.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MountainClimb.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MountainSide-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MountainSide-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MountainSide.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\MountainSide.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\RhinosMajestic.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\RhinosMajestic.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\SeasideReflection-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\SeasideReflection-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\SeasideReflection.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\SeasideReflection.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\StreetPhoto-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\StreetPhoto-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\StreetPhoto.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\StreetPhoto.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Zebra-Night-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Zebra-Night-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Zebra-Night.png",
+      "PackagePath": "staticwebassets\\lib\\src\\gallery\\Zebra-Night.png"
+    },
+    {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\logos\\Gypsey-100-1.png",
       "PackagePath": "staticwebassets\\lib\\src\\logos\\Gypsey-100-1.png"
     },
@@ -131,6 +291,14 @@
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\logos\\Gypsey-32.png",
       "PackagePath": "staticwebassets\\lib\\src\\logos\\Gypsey-32.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\logos\\Gypsey-40-1.png",
+      "PackagePath": "staticwebassets\\lib\\src\\logos\\Gypsey-40-1.png"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\logos\\Gypsey-40.png",
+      "PackagePath": "staticwebassets\\lib\\src\\logos\\Gypsey-40.png"
     },
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\logos\\Gypsey-560-1.png",
@@ -10445,6 +10613,18 @@
       "PackagePath": "staticwebassets\\node_modules\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\fizzy-ui-utils\\bower.json",
+      "PackagePath": "staticwebassets\\node_modules\\fizzy-ui-utils\\bower.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\fizzy-ui-utils\\package.json",
+      "PackagePath": "staticwebassets\\node_modules\\fizzy-ui-utils\\package.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\fizzy-ui-utils\\test\\index.html",
+      "PackagePath": "staticwebassets\\node_modules\\fizzy-ui-utils\\test\\index.html"
+    },
+    {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\font-awesome\\.npmignore",
       "PackagePath": "staticwebassets\\node_modules\\font-awesome\\.npmignore"
     },
@@ -10607,6 +10787,42 @@
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\font-awesome\\scss\\font-awesome.scss",
       "PackagePath": "staticwebassets\\node_modules\\font-awesome\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\bower.json",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\bower.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\package.json",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\package.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\sandbox.html",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\sandbox.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\test\\iframe.html",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\test\\iframe.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\test\\iframe3.html",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\test\\iframe3.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\test\\iframe4.html",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\test\\iframe4.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\test\\index.html",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\test\\index.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\get-size\\test\\tests.css",
+      "PackagePath": "staticwebassets\\node_modules\\get-size\\test\\tests.css"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\isotope-layout\\package.json",
+      "PackagePath": "staticwebassets\\node_modules\\isotope-layout\\package.json"
     },
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\jquery\\AUTHORS.txt",
@@ -11127,6 +11343,58 @@
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\jquery\\src\\wrap.js",
       "PackagePath": "staticwebassets\\node_modules\\jquery\\src\\wrap.js"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\masonry-layout\\package.json",
+      "PackagePath": "staticwebassets\\node_modules\\masonry-layout\\package.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\bower.json",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\bower.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\package.json",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\package.json"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\browserify\\browserify.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\browserify\\browserify.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\cells-by-row.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\cells-by-row.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\examples.css",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\examples.css"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\item-methods.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\item-methods.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\padding-percent.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\padding-percent.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\requirejs\\requirejs.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\requirejs\\requirejs.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\stagger.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\stagger.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\sandbox\\toggler.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\sandbox\\toggler.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\test\\index.html",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\test\\index.html"
+    },
+    {
+      "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\outlayer\\test\\tests.css",
+      "PackagePath": "staticwebassets\\node_modules\\outlayer\\test\\tests.css"
     },
     {
       "Id": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\node_modules\\owl.carousel\\.gitattributes",

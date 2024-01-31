@@ -20,7 +20,7 @@
     "name": "Gypsey Expeditions",
     "image": "https://gypseyexpeditions/lib/src/project/Image-6.webp",
     "url":"https://gypseyexpeditions.com",
-    "telephone": "+254 (706) 547 003",
+    "telephone": "+254 (724) 822 582",
     "email": "info@gypseyexpeditions.com",
     "address": {
       "@ViewData["Type"]": "PostalAddress",
@@ -48,15 +48,14 @@
 
     @RenderSection("MetaTags", required: false)
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" sizes="76x76" width="76px" height="76px"  href="~/lib/src/logos/Gypsey-76.png" />
-    <link rel="apple-touch-icon" sizes="26x32" width="26px" height="32px" href="~/lib/src/logos/Gypsey-32.png" />
-    <link rel="shortcut icon" sizes="76x76" width="76px" height="76px"  href="~/lib/src/logos/Gypsey-76.png" />
+    <!-- Favicons - To be adjusted -->
+    <link rel="shortcut icon" sizes="32x32" width="32px" height="32px" href="~/lib/src/logos/Gypsey-32.png" />
+    <link rel="apple-touch-icon" sizes="32x32" width="32px" height="32px" href="~/lib/src/logos/Gypsey-32.png" />
+    <link rel="apple-touch icon" sizes="76x76" width="76px" height="76px" href="~/lib/src/logos/Gypsey-76.png" />
     <link rel="apple-touch-icon" sizes="120x120" width="120px" height="120px" href="~/lib/src/logos/Gypsey-120.png" />
 
     <!--Main Styles-->
     <link href="~/css/bootstrap_custom.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link href="~/css/icon/et-line-font.css" rel="stylesheet" />
     <!--Font Styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,10 +68,13 @@
     <link rel="stylesheet" href="~/css/animate.css" />
     <!--Swiper Stylesheet-->
     <link href="~/node_modules/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!--Image Gallery Stylesheet-->
+    <link href="~/css/image-carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
 
-    @await Html.PartialAsync("_Header", new GypseyExpeditions.Controllers._HeaderModel())
+    @await Html.PartialAsync("_Header", new GypseyExpeditions.Controllers._HeaderModel(new Services.PopularToursService(WebHostEnvironment)))
     <div class="layout">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -80,13 +82,13 @@
     </div>
     <!-- Overlay for faded background -->
     <div id="overlay"></div>
-    @await Html.PartialAsync("_Footer", new GypseyExpeditions.Controllers._FooterModel())
+    @await Html.PartialAsync("_Footer", new GypseyExpeditions.Controllers._FooterModel(new Services.PopularToursService(WebHostEnvironment)))
 
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/node_modules/jquery/dist/jquery.sticky.js"></script>
-    <script src="~/js/jquery.appear.js"></script> 
+    <script src="~/js/jquery.appear.js"></script>
 
     <!--Owl Carousel JS-->
     <script src="~/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>

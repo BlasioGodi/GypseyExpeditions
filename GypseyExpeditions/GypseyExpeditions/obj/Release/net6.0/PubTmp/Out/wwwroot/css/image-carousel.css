@@ -1,0 +1,377 @@
+﻿@import url('../node_modules/font-awesome/css/font-awesome.css');
+@import url('magnific-popup.css');
+@import url('../node_modules/owl.carousel/dist/assets/owl.carousel.css');
+@import url('owl.transitions.css');
+
+
+:root {
+    --bs-title-font-family: 'Salsa', cursive;
+    --bs-header-font-family: 'Salsa', cursive;
+    --bs-footer-font-family: 'Nunito', sans-serif;
+    --bs-body-font-family: 'Nunito', sans-serif;
+    --theme-color-olive: rgb(51, 64, 28);
+    --theme-color-olive-rgb: 51, 64, 28;
+    --theme-olive-background-rgb: 77, 85, 64;
+    --theme-olive-background-rgb-1: 65, 75, 55;
+    --theme-color-orange: rgb(255,127,0);
+    --theme-color-orange-rgb: 255,127,0;
+    --theme-black-rgb: 49,48,65;
+    --theme-border-radius: 10px;
+}
+.project {
+    padding: 0;
+    overflow: hidden;
+}
+
+    .project figure {
+        position: relative;
+    }
+
+        .project figure img {
+            display: block;
+            width: 100%;
+            -webkit-transition: all 8s linear;
+            -o-transition: all 8s linear;
+            transition: all 8s linear;
+        }
+
+        .project figure:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+    .project.project-light figure:after {
+        opacity: 0.4;
+    }
+
+    .project figcaption {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 3.2em 3.6em;
+    }
+
+.project-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: var(--bs-title-font-family);
+    font-weight: normal;
+    font-size: 1.56em;
+    line-height: 1.45;
+    letter-spacing: 0.07em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.image-title {
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: 0;
+    font-family: var(--bs-title-font-family)
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.45;
+    letter-spacing: 0.07em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.project-category {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 -0.8em;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.8em;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.project-zoom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 9em;
+    height: 9em;
+    margin: -4.5em;
+    border-radius: 50%;
+    background-color: #ff904c;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+    .project-zoom:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 2.625em;
+        height: 2.625em;
+        background: url("/img/img-icon/zoom.png") 0 0 no-repeat;
+        background-size: cover;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+.project figure:hover:after {
+    opacity: 0;
+}
+
+.project figure:hover img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.project figure:hover .project-title {
+    top: 30px;
+    opacity: 0;
+}
+
+.project figure:hover .project-category {
+    opacity: 0;
+    letter-spacing: 2em;
+}
+
+.project figure:hover .project-zoom {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Magnific popup */
+
+.mfp-figure {
+    box-shadow: none;
+}
+
+.mfp-iframe-scaler {
+    overflow: visible;
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    padding: 0;
+    margin-top: -10px;
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 0;
+}
+
+img.mfp-img {
+    min-height: 460px;
+}
+
+.mfp-title {
+    padding-right: 40px;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin-top: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+}
+
+.mfp-counter {
+    top: 5px;
+}
+
+.mfp-bg {
+    background-color: #141414;
+}
+
+.mfp-arrow-left:before,
+.mfp-arrow-left .mfp-b {
+    display: none;
+}
+
+.mfp-arrow-right:before,
+.mfp-arrow-right .mfp-b {
+    display: none;
+}
+
+.mfp-wrap .mfp-content {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.mfp-wrap .mfp-figure,
+.mfp-wrap .mfp-iframe-scaler {
+    opacity: 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: scale(0) rotateY(60deg);
+    -o-transform: scale(0) rotateY(60deg);
+    transform: scale(0) rotateY(60deg);
+}
+
+.mfp-bg {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.mfp-wrap .mfp-figure,
+.mfp-wrap .mfp-iframe-scaler {
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: rotateY(-60deg);
+    -ms-transform: rotateY(-60deg);
+    -o-transform: rotateY(-60deg);
+    transform: rotateY(-60deg);
+}
+
+.mfp-bg {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.mfp-wrap.mfp-ready .mfp-figure,
+.mfp-wrap.mfp-ready .mfp-iframe-scaler {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-wrap.mfp-removing .mfp-figure,
+.mfp-wrap.mfp-removing .mfp-iframe-scaler {
+    opacity: 0;
+    -webkit-transform: rotateX(-60deg);
+    -ms-transform: rotateX(-60deg);
+    -o-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+}
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: url("/img/zoom-in.cur"), zoom-out;
+}
+
+.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+/* 5.3 Project Details */
+
+.project-title-info {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2vmin;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 2.2em;
+    margin-left: -1.8em;
+}
+
+    .project-title-info .project-info-item {
+        display: inline-block;
+        margin-left: 1.8em;
+    }
+
+.project-details-item {
+    position: relative;
+}
+
+.project-details-img {
+    position: relative;
+    padding: 0;
+}
+
+.project-details-info {
+    background-color: #ff904c;
+    padding: 4.8em 3.1em 4.8em;
+    color: #fff;
+}
+
+.project-details-title {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.9em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0.7em;
+}
+
+    .project-details-title:before {
+        content: "";
+        position: absolute;
+        bottom: -0.35em;
+        width: 10em;
+        border-top: 1px solid #ededed;
+        left: -4.4em;
+        width: 5.5em;
+    }
+
+.project-details-descr {
+    font-size: 1.1em;
+    line-height: 1.62;
+}
+
+    .project-details-descr p:last-child {
+        margin-bottom: 0;
+    }
+
+.project-details-item:nth-child(even) .project-details-info {
+    right: 0;
+    left: auto;
+    top: 13%;
+    background-color: #212121;
+}
+
+@media (min-width: 200px) and (max-width: 575px){
+}

@@ -204,10 +204,10 @@ $utilities: map-merge( ( "border-radius": ( property: border-radius, class: br, 
 "position": ( property: position, values: static relative absolute fixed sticky, ), "top": ( property: top, values: $position-values, ), "bottom": ( property: bottom, values: $position-values, ), "start": ( property: left, class: start, values: $position-values, ), "end": ( property: right, class: end, values: $position-values, ), "height": ( property: height, class: h, values: ( 10: 10%, 20: 20%, 30: 30%, 40: 40%, 50: 50%, 60: 60%, 70: 70%, 80: 80%, 90: 90%, 100: 100%, auto: auto, ), ), ), $utilities );
 
 // scss-docs-start grid-breakpoints
-$grid-breakpoints: (xss:0, xs:375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px ) !default;
+$grid-breakpoints: (xss:0, xs:375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 3500px ) !default;
 
 // scss-docs-start container-max-widths
-$container-max-widths: (xs:375px,sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px ) !default;
+$container-max-widths: (xs:375px,sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px) !default;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -262,8 +262,8 @@ $card-primary-color: white;
 .btn-primary:hover,
 .btn-primary:focus {
     @extend .btn-primary;
-    background-color: $darken-primary;
-    border-color: $darken-primary;
+    background-color: var(--theme-color-olive);
+    border-color: var(--theme-color-olive);
     color: #ffffff;
     cursor: pointer;
 }
@@ -272,7 +272,6 @@ $card-primary-color: white;
 .nav-item {
     @extend .nav-item;
     font-family: var(--bs-title-font-family);
-    margin-right: 25px;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -290,7 +289,7 @@ $card-primary-color: white;
     margin-right: 0;
 }
 
-.offcanvas .navbar-nav li:last-child a{
+.offcanvas .navbar-nav li:last-child a {
     border-bottom: none;
 }
 
@@ -299,7 +298,7 @@ $card-primary-color: white;
     border-radius: 0px;
     color: $nav-primary-color;
     font-family: var(--bs-title-font-family);
-    font-size: 1.2rem;   
+    font-size: 1.2rem;
 }
 
 .nav-link-mobile {
@@ -308,7 +307,7 @@ $card-primary-color: white;
     border-bottom: 1px solid rgba(var(--theme-black-rgb),.6);
 }
 
-.nav-link-mobile span{
+.nav-link-mobile span {
     position: absolute;
     right: 0;
     padding-left: 10px;
@@ -318,14 +317,10 @@ $card-primary-color: white;
     border-radius: 5px;
 }
 
-.nav-link-mobile span > i{
+.nav-link-mobile span > i {
     transition: transform 0.5s, width 0.5s;
 }
 
-.navbar-brand{
-    @extend .navbar-brand;
-    margin-right: 150px;
-}
 .nav-link-brand {
     @extend .nav-link;
     font-size: 1.3rem;
@@ -374,4 +369,8 @@ $card-primary-color: white;
 @media (max-width: 576px) {
 }
 
-
+@media (min-width: 1180px) {
+    .nav-item {
+        margin-right: 15px;
+    }
+}

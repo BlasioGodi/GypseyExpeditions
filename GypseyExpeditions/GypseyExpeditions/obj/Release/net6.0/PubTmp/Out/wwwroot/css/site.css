@@ -28,6 +28,7 @@ body {
     --theme-color-orange: rgb(255,127,0);
     --theme-color-orange-rgb: 255,127,0;
     --theme-black-rgb: 49,48,65;
+    --theme-white-rgb: 255,255,255;
     --theme-border-radius: 10px;
 }
 
@@ -168,6 +169,7 @@ a {
 
 .list-unstyled {
     list-style: none;
+    padding-left: 0;
 }
 
 /* Navigation Bar - Main */
@@ -665,6 +667,7 @@ body.offcanvas-open {
 .tour-search-one__input-box {
     padding: 27px 40px 25px;
     max-height: 100px;
+    border-right: 1px solid #ebe6de;
 }
 
     .tour-search-one__input-box label {
@@ -713,10 +716,373 @@ body.offcanvas-open {
             box-shadow: none;
         }
 
+    .tour-search-one__input-box:last-child {
+        border-right: none;
+    }
+
+/* Destination */
+.section-title {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.section-title__tagline {
+    display: block;
+    color: var(--theme-color-orange);
+    font-size: 20px;
+    align-items: center;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--bs-title-font-family);
+}
+
+.section-title__title {
+    margin: 0;
+    font-weight: 700;
+    color: var(--thm-black);
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -.02em;
+}
+/* Masonry Isotope */
+.portfolio-item {
+    float: left;
+    width: 100%;
+    padding: 45px 45px;
+}
+
+.pt-img {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+    .pt-img:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(16, 33, 46, 0.4);
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+.portfolio-item:hover .pt-img:before {
+    height: 0;
+}
+
+.portfolio-item .item-info h3 {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-item:hover .item-info h3 {
+    color: var(--theme-color);
+}
+
+.portfolio-item .item-info .item-info-title {
+    color: white;
+}
+
+.portfolio-item:hover .item-info .item-info-title {
+    color: var(--theme-color);
+}
+
+.pt-img img {
+    width: 100%;
+}
+
+.load-more-items {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+    .load-more-items a {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+        .load-more-items a:hover {
+            color: var(--theme-color);
+            text-decoration: none;
+        }
+
+.portfolio-grid.text-style .portfolio-item {
+    padding: 5px;
+    position: relative;
+}
+
+.portfolio-grid.text-style .item-info {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    padding: 0 45px 0 45px;
+}
+
+    .portfolio-grid.text-style .item-info span {
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+
+.portfolio-grid .col-lg-4 {
+    padding: 0;
+}
+
+.portfolio-grid.text-style .col-lg-12,
+.portfolio-grid.text-style .col-lg-8 {
+    padding: 0;
+}
+
+.options {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    .options ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .options ul li {
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px 20px;
+            list-style: none;
+            -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+            transition: background .5s ease-in-out,padding .5s ease-in-out;
+        }
+
+            .options ul li a {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                cursor: pointer;
+                font-family: var(--bs-title-font-family);
+            }
+
+            .options ul li:hover {
+                border-radius: 10px;
+                color: white;
+                background-color: var(--theme-color);
+            }
+
+            .options ul li:focus {
+                border-radius: 10px;
+                color: white;
+                background-color: var(--theme-color);
+            }
+
+.item-info {
+    float: left;
+    padding-top: 20px;
+}
+
+    .item-info h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    .item-info span {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+/* About Gypsey */
+
+.about-one {
+    position: relative;
+    display: block;
+    padding: 105px 0 111px;
+}
+
+.about-one__right {
+    position: relative;
+    display: block;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+    .about-one__right .section-title {
+        margin-bottom: 37px;
+    }
+
+.about-one__right-text {
+    margin: 0;
+}
+
+.about-one__img,
+.about-one__img-box,
+.about-one__left {
+    position: relative;
+    display: block;
+}
+
+.about-one__call {
+    position: absolute;
+    bottom: 216px;
+    left: -95px;
+    background-color: #fff;
+    box-shadow: 0 10px 60px 0 rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    padding: 25px 40px 24px;
+    border-radius: var(--theme-border-radius);
+}
+
+.about-one__call-icon {
+    display: flex;
+    align-items: center;
+}
+
+    .about-one__call-icon .et-icon-color {
+        color: var(--theme-color-orange);
+    }
+
+    .about-one__call-icon span {
+        font-size: 25px;
+        color: var(--theme-black-rgb);
+    }
+
+.about-one__call-number {
+    margin-left: 20px;
+}
+
+    .about-one__call-number p {
+        font-size: 10px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 13px;
+    }
+
+    .about-one__call-number h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+        .about-one__call-number h4 a {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--theme-black-rgb);
+        }
+
+.about-one__discount {
+    position: absolute;
+    top: 60px;
+    right: 65px;
+}
+
+    .about-one__discount h2 {
+        font-size: 80px;
+        color: rgb(var(--theme-white-rgb));
+        line-height: 80px;
+        font-family: var(--bs-title-font-family);
+    }
+
+    .about-one__discount h3 {
+        font-size: 50px;
+        font-weight: 700;
+        color: rgb(var(--theme-white-rgb));
+        margin-top: -27px;
+    }
+
+.about-one__points {
+    position: relative;
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 61px;
+}
+
+    .about-one__points li {
+        display: flex;
+        align-items: center;
+    }
+
+        .about-one__points li + li {
+            margin-top: 10px;
+        }
+
+        .about-one__points li .icon {
+            height: 16px;
+            width: 16px;
+            background-color: var(--theme-color-orange);
+            font-size: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--thm-base);
+            border-radius: 50%;
+        }
+
+        .about-one__points li .text {
+            margin-left: 15px;
+        }
+
+            .about-one__points li .text p {
+                color: var(--thm-black);
+                font-weight: 500;
+                margin: 0;
+            }
+
+
+.thm-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    background-color: var(--theme-color-orange);
+    color: var(--theme-black-rgb);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 30px;
+    border-radius: 8px;
+    transition: all .3s linear;
+    overflow: hidden;
+    letter-spacing: .1em;
+    z-index: 1;
+}
+
+    .thm-btn:hover,
+    .thm-btn:focus {
+        background-color: var(--theme-color-olive);
+        color: #ffffff;
+        cursor: pointer;
+    }
+
 
 /* Media Queries */
-@media (max-width: 280px) {
-    .tour-search{
+/* Screen Device - Galaxy Fold */
+@media (min-width: 280px) and (max-width: 280px) {
+    .navbar-brand {
+        margin-right: 10px;
+    }
+
+    .tour-search {
         margin-top: -100px;
     }
 
@@ -728,23 +1094,27 @@ body.offcanvas-open {
         min-height: 70vh;
     }
 
+        .main-slider h1 {
+            line-height: 50px;
+        }
+
     .slider-inner {
         padding-top: 100px;
     }
 
         .slider-inner h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         .slider-inner p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
     .slider-button-next,
     .slider-button-prev {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 
     .slider-button-prev {
@@ -756,16 +1126,74 @@ body.offcanvas-open {
     }
 
     .slider-nav {
-        top: 14rem;
+        top: 13rem;
+    }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 15px;
+        right: 35px;
+    }
+
+        .about-one__discount h2 {
+            font-size: 40px;
+            line-height: 70px;
+        }
+
+        .about-one__discount h3 {
+            font-size: 30px;
+        }
+
+    .about-one__call {
+        bottom: 16px;
+        left: 0;
+        padding: 10px 10px 10px;
+    }
+
+    .about-one__call-number h4 a {
+        font-size: 14px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .about-one__points {
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+    .about-one__right .section-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-title__title {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -.03em;
+    }
+
+    .tour-search-one__input-box {
+        padding: 15px 20px 20px;
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 285px) and (max-width: 375px) {
     #overlay {
         top: 87px;
     }
 
-    .main-slider{
+    .main-slider {
         min-height: 70vh;
     }
 
@@ -774,11 +1202,11 @@ body.offcanvas-open {
     }
 
         .slider-inner h1 {
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
 
         .slider-inner p {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
 
     .slider-button-next,
@@ -809,8 +1237,58 @@ body.offcanvas-open {
         margin-top: -100px;
     }
 
-    .tour-search-one{
+    .tour-search-one {
         margin: 12px;
+    }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 15px;
+        right: 35px;
+    }
+
+        .about-one__discount h2 {
+            font-size: 60px;
+            line-height: 80px;
+        }
+
+        .about-one__discount h3 {
+            font-size: 40px;
+        }
+
+    .about-one__call {
+        bottom: 76px;
+        left: 0;
+        padding: 20px 20px 20px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .about-one__points {
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+    .about-one__right .section-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-title__title {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -.03em;
     }
 }
 
@@ -866,6 +1344,117 @@ body.offcanvas-open {
     .tour-search-one {
         margin: 12px;
     }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 15px;
+        right: 35px;
+    }
+
+        .about-one__discount h2 {
+            font-size: 60px;
+            line-height: 80px;
+        }
+
+        .about-one__discount h3 {
+            font-size: 40px;
+        }
+
+    .about-one__call {
+        bottom: 76px;
+        left: 0;
+        padding: 20px 20px 20px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .about-one__points {
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+    .about-one__right .section-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-title__title {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -.03em;
+    }
+}
+
+/* Screen Device - Pixel 7/ Samsung Galaxy S20 Ultra */
+@media only screen and (min-width: 412px) and (max-width: 412px) {
+    .slider-inner {
+        padding-top: 220px;
+    }
+
+    .slider-nav {
+        top: 20rem;
+    }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 15px;
+        right: 35px;
+    }
+
+        .about-one__discount h2 {
+            font-size: 60px;
+            line-height: 80px;
+        }
+
+        .about-one__discount h3 {
+            font-size: 40px;
+        }
+
+    .about-one__call {
+        bottom: 76px;
+        left: 0;
+        padding: 20px 20px 20px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .about-one__points {
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+    .about-one__right .section-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-title__title {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -.03em;
+    }
 }
 
 @media (min-width: 414px) and (max-width: 576px) {
@@ -877,13 +1466,13 @@ body.offcanvas-open {
         padding-top: 200px;
     }
 
-    .slider-inner h1 {
-        font-size: 3rem;
-    }
+        .slider-inner h1 {
+            font-size: 3rem;
+        }
 
-    .slider-inner p {
-        font-size: 1.5rem;
-    }
+        .slider-inner p {
+            font-size: 1.5rem;
+        }
 
     .slider-button-next,
     .slider-button-prev {
@@ -908,6 +1497,70 @@ body.offcanvas-open {
         line-height: 60px;
         margin: 12px;
     }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 15px;
+        right: 35px;
+    }
+
+        .about-one__discount h2 {
+            font-size: 60px;
+            line-height: 80px;
+        }
+
+        .about-one__discount h3 {
+            font-size: 40px;
+        }
+
+    .about-one__call {
+        bottom: 76px;
+        left: 0;
+        padding: 20px 20px 20px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .about-one__points {
+        margin-top: 34px;
+        margin-bottom: 31px;
+    }
+
+    .about-one__right .section-title {
+        margin-bottom: 28px;
+        margin-top: 28px;
+    }
+
+    .section-title {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .section-title__title {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -.03em;
+    }
+}
+/* Screen Device - Surface Pro Duo */
+@media (min-width: 540px) and (max-width: 540px) {
+    .slider-inner {
+        padding-top: 100px;
+    }
+
+        .slider-inner h1 {
+            font-size: 3rem;
+        }
+
+        .slider-inner p {
+            font-size: 1.5rem;
+        }
 }
 
 @media (max-width: 576px) {
@@ -921,7 +1574,216 @@ body.offcanvas-open {
     .slider-inner p {
         font-size: 2rem;
     }
+
+    .slider-button-next,
+    .slider-button-prev {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .slider-button-prev {
+        margin-left: 20px;
+    }
+
+    .slider-button-next {
+        margin-right: 20px;
+    }
 }
 
+@media(max-width:768px) {
+    .tour-search-one__input-box:first-child {
+        border-right: none;
+    }
+
+    .tour-search-one > .tour-search-one__input-box:nth-last-child(2),
+    .tour-search-one > .tour-search-one__input-box:nth-last-child(3) {
+        border-right: none;
+    }
+
+    .tour-search-one__input-box:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+    .slider-inner {
+        padding-top: 285px;
+    }
+
+        .slider-inner h1 {
+            font-size: 4rem;
+        }
+
+        .slider-inner p {
+            font-size: 2rem;
+        }
+
+    .slider-button-next,
+    .slider-button-prev {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .slider-button-prev {
+        margin-left: 25px;
+    }
+
+    .slider-button-next {
+        margin-right: 25px;
+    }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__discount {
+        top: 120px;
+        right: 165px;
+    }
+
+    .about-one__call {
+        bottom: 126px;
+        left: -9px;
+        padding: 25px 40px 24px;
+    }
+
+    .about-one__right {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+        .about-one__right .section-title {
+            margin-bottom: 28px;
+            margin-top: 28px;
+        }
+}
+
+/* Screen Device - iPad Pro */
+@media (min-width: 768px) and (max-width: 768px) {
+}
+
+/* Screen Device - iPad Air */
+@media (min-width: 820px) and (max-width: 820px) {
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tour-search-one__input-box {
+        border-bottom: 1px solid #ebe6de;
+    }
+
+        .tour-search-one__input-box:first-child {
+            border-right: none;
+        }
+
+        .tour-search-one__input-box:last-child {
+            border-bottom: none;
+        }
+
+    .tour-search-one > .tour-search-one__input-box:nth-last-child(2) {
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tour-search-one__input-box {
+        border-bottom: 1px solid #ebe6de;
+    }
+}
+
+/* Screen Device - Surface Pro 7 */
+@media (min-width: 912px) and (max-width: 912px) {
+    .slider-inner {
+        padding-top: 400px;
+    }
+
+        .slider-inner h1 {
+            font-size: 4.5rem;
+        }
+
+        .slider-inner p {
+            font-size: 2.2rem;
+        }
+
+    .slider-button-next,
+    .slider-button-prev {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .slider-button-prev {
+        margin-left: 75px;
+    }
+
+    .slider-button-next {
+        margin-right: 75px;
+    }
+}
+
+
+@media (min-width: 920px) and (max-width: 1199px) {
+    .slider-inner {
+        padding-top: 200px;
+    }
+
+        .slider-inner h1 {
+            font-size: 4rem;
+        }
+
+        .slider-inner p {
+            font-size: 2rem;
+        }
+
+    .about-one {
+        padding: 40px 0 50px;
+    }
+
+    .about-one__left {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* Screen Device - IPad Pro */
+@media only screen and (width: 1024px) and (height: 1366px) {
+    .slider-inner {
+        padding-top: 350px;
+    }
+}
+/* Screen Device - Nest Hub */
+@media only screen and (width: 1024px) and (height: 600px) {
+    .slider-inner {
+        padding-top: 160px;
+    }
+
+        .slider-inner h1 {
+            font-size: 3.5rem;
+        }
+
+        .slider-inner p {
+            font-size: 1.7rem;
+        }
+
+    .slider-button-next,
+    .slider-button-prev {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .slider-button-prev {
+        margin-left: 75px;
+    }
+
+    .slider-button-next {
+        margin-right: 75px;
+    }
+
+    .main-slider h1 {
+        line-height: 50px;
+        margin: 12px;
+    }
 }

@@ -51,6 +51,9 @@
     <Content Include="wwwroot\node_modules\bootstrap\dist\css\bootstrap.rtl.css" />
     <Content Include="wwwroot\node_modules\bootstrap\dist\css\bootstrap.rtl.min.css" />
     <Content Include="wwwroot\node_modules\bootstrap\package.json" />
+    <Content Include="wwwroot\node_modules\fizzy-ui-utils\bower.json" />
+    <Content Include="wwwroot\node_modules\fizzy-ui-utils\package.json" />
+    <Content Include="wwwroot\node_modules\fizzy-ui-utils\test\index.html" />
     <Content Include="wwwroot\node_modules\font-awesome\css\font-awesome.css" />
     <Content Include="wwwroot\node_modules\font-awesome\css\font-awesome.min.css" />
     <Content Include="wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.eot" />
@@ -59,10 +62,32 @@
     <Content Include="wwwroot\node_modules\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="wwwroot\node_modules\font-awesome\HELP-US-OUT.txt" />
     <Content Include="wwwroot\node_modules\font-awesome\package.json" />
+    <Content Include="wwwroot\node_modules\get-size\bower.json" />
+    <Content Include="wwwroot\node_modules\get-size\package.json" />
+    <Content Include="wwwroot\node_modules\get-size\sandbox.html" />
+    <Content Include="wwwroot\node_modules\get-size\test\iframe.html" />
+    <Content Include="wwwroot\node_modules\get-size\test\iframe3.html" />
+    <Content Include="wwwroot\node_modules\get-size\test\iframe4.html" />
+    <Content Include="wwwroot\node_modules\get-size\test\index.html" />
+    <Content Include="wwwroot\node_modules\get-size\test\tests.css" />
+    <Content Include="wwwroot\node_modules\isotope-layout\package.json" />
     <Content Include="wwwroot\node_modules\jquery\AUTHORS.txt" />
     <Content Include="wwwroot\node_modules\jquery\bower.json" />
     <Content Include="wwwroot\node_modules\jquery\LICENSE.txt" />
     <Content Include="wwwroot\node_modules\jquery\package.json" />
+    <Content Include="wwwroot\node_modules\masonry-layout\package.json" />
+    <Content Include="wwwroot\node_modules\outlayer\bower.json" />
+    <Content Include="wwwroot\node_modules\outlayer\package.json" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\browserify\browserify.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\cells-by-row.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\examples.css" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\item-methods.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\padding-percent.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\requirejs\requirejs.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\stagger.html" />
+    <Content Include="wwwroot\node_modules\outlayer\sandbox\toggler.html" />
+    <Content Include="wwwroot\node_modules\outlayer\test\index.html" />
+    <Content Include="wwwroot\node_modules\outlayer\test\tests.css" />
     <Content Include="wwwroot\node_modules\owl.carousel\bower.json" />
     <Content Include="wwwroot\node_modules\owl.carousel\dist\assets\ajax-loader.gif" />
     <Content Include="wwwroot\node_modules\owl.carousel\dist\assets\owl.carousel.css" />
@@ -243,7 +268,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
@@ -3225,6 +3249,68 @@
     <Content Include="wwwroot\node_modules\swiper\swiper.min.mjs.map" />
     <Content Include="wwwroot\node_modules\swiper\swiper.mjs" />
     <Content Include="wwwroot\node_modules\swiper\swiper.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\README.md" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\.jshintrc" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\filter-find-elements.js" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\get-parent.js" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\html-init.js" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\make-array.js" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\test\unit\remove-from.js" />
+    <None Include="wwwroot\node_modules\fizzy-ui-utils\utils.js" />
+    <None Include="wwwroot\node_modules\get-size\get-size.js" />
+    <None Include="wwwroot\node_modules\get-size\README.md" />
+    <None Include="wwwroot\node_modules\get-size\test\tests.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\dist\isotope.pkgd.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\dist\isotope.pkgd.min.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\isotope.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\item.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\layout-mode.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\layout-modes\fit-rows.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\layout-modes\masonry.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\js\layout-modes\vertical.js" />
+    <None Include="wwwroot\node_modules\isotope-layout\README.md" />
+    <None Include="wwwroot\node_modules\masonry-layout\dist\masonry.pkgd.js" />
+    <None Include="wwwroot\node_modules\masonry-layout\dist\masonry.pkgd.min.js" />
+    <None Include="wwwroot\node_modules\masonry-layout\masonry.js" />
+    <None Include="wwwroot\node_modules\masonry-layout\README.md" />
+    <None Include="wwwroot\node_modules\outlayer\.jshintrc" />
+    <None Include="wwwroot\node_modules\outlayer\.npmignore" />
+    <None Include="wwwroot\node_modules\outlayer\docs\item.md" />
+    <None Include="wwwroot\node_modules\outlayer\docs\notes.md" />
+    <None Include="wwwroot\node_modules\outlayer\docs\outlayer.md" />
+    <None Include="wwwroot\node_modules\outlayer\item.js" />
+    <None Include="wwwroot\node_modules\outlayer\outlayer.js" />
+    <None Include="wwwroot\node_modules\outlayer\README.md" />
+    <None Include="wwwroot\node_modules\outlayer\sandbox\browserify\main.js" />
+    <None Include="wwwroot\node_modules\outlayer\sandbox\cells-by-row.js" />
+    <None Include="wwwroot\node_modules\outlayer\sandbox\fit-rows.js" />
+    <None Include="wwwroot\node_modules\outlayer\sandbox\requirejs\main.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\.jshintrc" />
+    <None Include="wwwroot\node_modules\outlayer\test\helpers.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\add-items.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\basics.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\container-size.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\create.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\declarative.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\defaults.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\destroy.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\filter-find.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\get-measurements.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\hide-reveal.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\item-on-transition-end.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\jquery-plugin.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\layout.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\offset.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\options.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\origin.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\percent-position.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\prepend.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\remove.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\stamp.js" />
+    <None Include="wwwroot\node_modules\outlayer\test\unit\transition-duration.js" />
   </ItemGroup>
 
   <ItemGroup>
