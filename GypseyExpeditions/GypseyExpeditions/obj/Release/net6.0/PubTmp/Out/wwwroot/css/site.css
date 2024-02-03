@@ -721,9 +721,20 @@ body.offcanvas-open {
     }
 
 /* Destination */
-.section-title {
-    margin-top: 48px;
-    margin-bottom: 48px;
+
+.section-title-destination {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.section-title-about {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.section-title-tours {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .section-title__tagline {
@@ -1046,6 +1057,96 @@ body.offcanvas-open {
                 margin: 0;
             }
 
+/* Popular Tours */
+.popular-tours__container, .popular-tours__img, .popular-tours__single {
+    position: relative;
+    display: block;
+}
+
+.popular-tours__container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popular-tours__img, .popular-tours__img img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.popular-tours__icon {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(var(--theme-black-rgb),.2);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    transition: all .5s ease;
+    align-items: center;
+    justify-content: center;
+    line-height: 38px;
+}
+
+.popular-tours__content{
+    position: relative;
+    display: block;
+    border: none;
+    padding: 10px 10px 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.popular-tours__stars {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--theme-black-rgb);
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    letter-spacing: -.02em;
+}
+
+.popular-tours__stars i{
+    font-size: 14px;
+    color: #ffa801;
+    margin-right: 6px;
+}
+
+.popular-tours__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -.02em;
+    margin-top: 4px;
+    margin-bottom: 7px;
+}
+
+.popular-tours__rate{
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: -.02em;
+}
+
+.popular-tours__meta{
+    display: flex;
+    align-items: center;
+    background-color: #faf5ee;
+    border-radius: var(--thm-border-radius);
+    padding: 0 10px;
+    margin-top: 19px;
+}
+
+    .popular-tours__meta li + li {
+        margin-left: 11px;
+    }
 
 .thm-btn {
     position: relative;
@@ -1076,6 +1177,14 @@ body.offcanvas-open {
 
 
 /* Media Queries */
+/* General Responsive Styling */
+@media (min-width: 280px) and (max-width: 768px) {
+    .popular-tours__content {
+        padding: 8px 8px 8px;
+    }
+}
+
+
 /* Screen Device - Galaxy Fold */
 @media (min-width: 280px) and (max-width: 280px) {
     .navbar-brand {
@@ -1172,9 +1281,19 @@ body.offcanvas-open {
         margin-top: 28px;
     }
 
-    .section-title {
-        margin-top: 28px;
-        margin-bottom: 28px;
+    .section-title-destination {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-tours {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .section-title__title {
@@ -1275,14 +1394,19 @@ body.offcanvas-open {
         margin-bottom: 31px;
     }
 
-    .about-one__right .section-title {
-        margin-bottom: 28px;
-        margin-top: 28px;
+    .section-title-destination {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .section-title {
-        margin-top: 28px;
-        margin-bottom: 28px;
+    .section-title-about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-tours {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .section-title__title {
@@ -1384,9 +1508,19 @@ body.offcanvas-open {
         margin-top: 28px;
     }
 
-    .section-title {
-        margin-top: 28px;
-        margin-bottom: 28px;
+    .section-title-destination {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .section-title-about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-tours {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .section-title__title {
@@ -1440,14 +1574,19 @@ body.offcanvas-open {
         margin-bottom: 31px;
     }
 
-    .about-one__right .section-title {
-        margin-bottom: 28px;
-        margin-top: 28px;
+    .section-title-destination {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .section-title {
-        margin-top: 28px;
-        margin-bottom: 28px;
+    .section-title-about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-tours {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .section-title__title {
@@ -1532,14 +1671,19 @@ body.offcanvas-open {
         margin-bottom: 31px;
     }
 
-    .about-one__right .section-title {
-        margin-bottom: 28px;
-        margin-top: 28px;
+    .section-title-destination {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .section-title {
-        margin-top: 28px;
-        margin-bottom: 28px;
+    .section-title-about {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-tours {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .section-title__title {
@@ -1752,6 +1896,14 @@ body.offcanvas-open {
     .slider-inner {
         padding-top: 350px;
     }
+
+    .popular-tours__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 /* Screen Device - Nest Hub */
 @media only screen and (width: 1024px) and (height: 600px) {
@@ -1785,5 +1937,32 @@ body.offcanvas-open {
     .main-slider h1 {
         line-height: 50px;
         margin: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3200px){
+
+}
+
+/* Owl Carousel Media Query */
+@media only screen and (max-width: 1600px) {
+    .owl-nav .owl-prev {
+        position: absolute;
+        top: 90%;
+        width: 25%;
+    }
+
+    .owl-nav .owl-next {
+        position: absolute;
+        top: 90%;
+        width: 25%;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel button.owl-dot {
+        background-color: rgba(var(--theme-olive-background-rgb),1);
+        box-shadow: 0 20px 15px rgba(0,0,0, 0.3);
+        border-radius: 10px;
     }
 }

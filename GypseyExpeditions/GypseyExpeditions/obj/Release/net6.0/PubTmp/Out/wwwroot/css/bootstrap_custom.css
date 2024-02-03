@@ -13181,6 +13181,32 @@ textarea.form-control-lg {
   top: 105px;
 }
 
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: -20px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -20px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
 /* Media Queries */
 @media (max-width: 375px) {
   .offcanvas.offcanvas-start {

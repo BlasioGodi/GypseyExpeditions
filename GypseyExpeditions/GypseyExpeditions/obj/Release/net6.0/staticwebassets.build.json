@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i4LDV+9iaKSqMpD1gChAFVllzfgkbTnlTSZ/wwzkaCI=",
+  "Hash": "+GavDArVUatd85qzXyxGqm/nXXKQHvmqrvXH1Pz66QI=",
   "Source": "GypseyExpeditions",
   "BasePath": "_content/GypseyExpeditions",
   "Mode": "Default",
@@ -967,6 +967,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\src\\gallery\\MapTravels.png"
+    },
+    {
+      "Identity": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\Memories.jpg",
+      "SourceId": "GypseyExpeditions",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\",
+      "BasePath": "_content/GypseyExpeditions",
+      "RelativePath": "lib/src/gallery/Memories.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\src\\gallery\\Memories.jpg"
     },
     {
       "Identity": "D:\\Git\\Websites\\GypseyExpeditions\\GypseyExpeditions\\GypseyExpeditions\\wwwroot\\lib\\src\\gallery\\MountainClimb.png",

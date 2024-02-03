@@ -29,17 +29,17 @@ $(document).ready(function () {
     });
     $('.owl-two').owlCarousel({
         startPosition: 3,
-        loop: false,
+        loop: true,
         rewind: true,
         margin: 10,
         responsiveClass: true,
-        center: true,
+        center: false,
         nav: true,
         dots: true,
         dotsEach: true,
-        //autoplay: true,
-        //autoplayTimeout: 2500,
-        //autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
         navText: [
             "<i class='fa fa-angle-left'></i>",
             "<i class='fa fa-angle-right'></i>"
@@ -48,11 +48,15 @@ $(document).ready(function () {
             0: {
                 items: 1,
             },
-            600: {
+            768: {
                 items: 2,
             },
-            1000: {
+            1024: {
                 items: 3,
+            },
+
+            1200: {
+                items: 4,
             }
         }
     });

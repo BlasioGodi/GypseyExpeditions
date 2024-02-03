@@ -6,6 +6,12 @@
 
 @section MetaTags{
 
+    <meta property="og:title" content="GypseyExpeditions">
+    <meta property="og:description"
+          content="We make LIFE LONG MEMORIES!">
+    <meta property="og:image" content="https://gypseyexpeditions.com/lib/src/gallery/Memories.jpg">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="720">
 }
 
 <section id="main-slider" class="position-relative main-slider">
@@ -264,9 +270,9 @@
                                     </div><h3 class="popular-tours__title">
                                         <a href="/tour-details">@tours.TourName</a>
                                     </h3><p class="popular-tours__rate">
-                                        <span>@tours.CostPerPerson</span> / Per Person
+                                        <span>@tours.CostPerPerson</span> Per Person
                                     </p>
-                                    <ul class="popular-tours__meta list-unstyled">
+                                    <ul class="popular-tours__meta list-unstyled justify-content-between">
                                         <li><a href="/tour-details">@tours.TripDays Days</a></li>
                                         <li><a href="/tour-details">@tours.TravelDate.ToString("MMM")</a></li>
                                         <li>

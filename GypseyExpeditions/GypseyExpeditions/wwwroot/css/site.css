@@ -1140,7 +1140,7 @@ body.offcanvas-open {
     align-items: center;
     background-color: #faf5ee;
     border-radius: var(--thm-border-radius);
-    padding: 0 28px;
+    padding: 0 10px;
     margin-top: 19px;
 }
 
@@ -1949,19 +1949,26 @@ body.offcanvas-open {
     .owl-nav .owl-prev {
         position: absolute;
         top: 90%;
-        width: 25%;
+        width: 10%;
     }
 
     .owl-nav .owl-next {
         position: absolute;
         top: 90%;
-        width: 25%;
+        width: 10%;
     }
 
     .owl-carousel .owl-nav button.owl-prev,
     .owl-carousel .owl-nav button.owl-next,
     .owl-carousel button.owl-dot {
         background-color: rgba(var(--theme-olive-background-rgb),1);
+        box-shadow: 0 20px 15px rgba(0,0,0, 0.3);
+        border-radius: 10px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev:hover,
+    .owl-carousel .owl-nav button.owl-next:hover {
+        background-color: rgba(var(--theme-olive-background-rgb),0.5);
         box-shadow: 0 20px 15px rgba(0,0,0, 0.3);
         border-radius: 10px;
     }
